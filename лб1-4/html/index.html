@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+    <title>Портфолио-резюме</title>
+    <meta name="seman" lang="ru" content="Портфолио-резюме">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* Стили для контейнера */
+      .container {
+          width: 500px; /* Ширина контейнера */
+          height: 255px;
+          border: 1px solid #ccc; /* Граница для отображения контейнера */
+      text-align: center;
+      line-height: 1; /* Уменьшение расстояния между строчками текста */
+                }
+
+      /* Стили для изображения */
+      .img-align {
+          float: left; /* Выравнивание изображения справа */
+          margin: 10px; /* Отступы вокруг изображения */
+      }
+      /* Стили для текста внутри элемента span с классом .special-text */
+      .special-text {
+            font-weight: bold; /* Жирный текст */
+            font-size: 20px; /* Увеличенный размер шрифта */
+            font-family: Arial, sans-serif; /* Шрифт Arial или без засечек (sans-serif) */
+        }
+        /*Стиль таблицы*/
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #61e8d6;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #60e8c2;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        video:hover {
+            transform: scale(1.05);
+        }
+
+  </style>
+    </head>
+<body>
+  <div class="container">
+    <img src="myphoto.jpg" alt="Пример изображения" class="img-align">
+    <br>
+    <span class="special-text">Дарья</span>
+    <br>
+    <div style="text-align: left;">
+      <br>
+            [обо мне]
+      <br>
+      <br>
+                  Привет, меня зовут Даша! Я обожаю ловить моменты жизни на камеру, запечатлевая красоту мира вокруг. 
+      Каждая фотография для меня – это не просто изображение, а отражение эмоций, мгновение, которое никогда не повторится.
+      <p><strong>Телефон:</strong> +375259239060</p>
+      <h2>Профиль ВКонтакте:</h2>
+      <p style="text-align: center;"><a href="https://vk.com/makeydasha">https://vk.com/makeydasha</a></p>
+      <h2>Образование</h2>
+            <p><strong>Образование:</strong> Гродненский государственный политехнический колледж</p>
+            <p><strong>Специальность:</strong> Программное обеспечение информационных технологий</p>
+            <h2>Опыт работы</h2>
+            <p><strong>Компания:</strong> ОАО "Слонимская комвольно-прядильная фабрика"</p>
+            <p><strong>Должность:</strong> Техник-программист</p>
+            <p><strong>Период работы:</strong> 02.02.2024 - 14.03.2024</p>
+            <h2>Навыки</h2>
+            <ul>
+                <li>HTML</li>
+                <li>Pascal</li>
+                <li>C#</li>
+            </ul>
+            <h2>Обязанности</h2>
+            <table>
+                <tr>
+                    <th>Обязанность</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>Оформление документации</td>
+                    <td>Забота о правильном оформлении всех необходимых документов, связанных с информационной технологией (IT).</td>
+                </tr>
+                <tr>
+                    <td>Установка программ</td>
+                    <td>Установка и настройка программного обеспечения на компьютерах с учетом потребностей сотрудников и требований безопасности.</td>
+                </tr>
+                <tr>
+                    <td>Обеспечение бесперебойной работы локальной сети</td>
+                    <td>Настройка и поддержание работы сетевого оборудования (маршрутизаторов, коммутаторов, маршрутизации сетевого трафика).</td>
+                </tr>
+            </table>
+            <h2>Личные качества</h2>
+            <p>Ответственность, коммуникабельность, стрессоустойчивость.</p>
+            <h2>Видео</h2>
+            <video controls>
+                               <source src="IMG_7487.MOV" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+    </div>               
+
+</body>
+</html>

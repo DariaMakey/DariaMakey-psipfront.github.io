@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Показать текущее время и работать со строками</title>
+    <!-- Подключение вашего скрипта для показа текущего времени -->
+    <script src="script.js"></script>
+    <!-- Подключение вашего CSS для стилизации -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Функция для показа текущего времени
+        function showCurrentTime() {
+            const now = new Date();
+            const hours = now.getHours();
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+            alert(`Текущее время: ${hours} часов, ${minutes} минут, ${seconds} секунд`);
+        }
+        
+        // Функция для работы с массивом
+        function workWithArray() {
+            // Создание массива из 7 целых элементов
+            let array = [1, 2, 3, 4, 5, 6, 7];
+
+            // Подсчет количества четных элементов массива
+            let evenCount = 0;
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] % 2 === 0) {
+                    evenCount++;
+                }
+            }
+
+            // Изменение массива - для примера, умножим каждый элемент на 2
+            let modifiedArray = array.map(x => x * 2);
+
+            // Вывод исходного массива
+            document.getElementById('originalArray').innerHTML = 'Исходный массив: ' + array.join(', ');
+
+            // Вывод количества четных элементов
+            document.getElementById('evenCount').innerHTML = 'Количество четных элементов: ' + evenCount;
+
+            // Вывод измененного массива
+            document.getElementById('modifiedArray').innerHTML = 'Измененный массив (умножение на 2): ' + modifiedArray.join(', ');
+        }
+
+        // Функция для вывода имени и фамилии
+        function printName() {
+            const n = 15; // Ваш номер варианта
+            const repetitions = n + 5;
+            const name = "Макей Дарья"; // Замените на вашу фамилию и имя
+
+            let output = "";
+            for (let i = 0; i < repetitions; i++) {
+                output += (i + 1) + ". " + name + "<br>";
+            }
+
+            document.getElementById("name-output").innerHTML = output;
+        }
+
+        // Функция для работы со строками
+        function workWithStrings() {
+            // Создаем строковые переменные
+            let S1 = "Макей";
+            let S2 = "пр. Независимости 23-53";
+
+            // Определяем длину строки S2
+            let lengthS2 = S2.length;
+
+            // Записываем строку S1 в обратном порядке
+            let reversedS1 = S1.split('').reverse().join('');
+
+            // Преобразуем строку S2 в нижний регистр
+            let lowerCaseS2 = S2.toLowerCase();
+
+            // Выводим результаты на страницу
+            document.getElementById('string-output').innerHTML =
+                "<strong>Работа со строками:</strong><br>" +
+                "S1: " + S1 + "<br>" +
+                "S2: " + S2 + "<br>" +
+                "Длина строки S2: " + lengthS2 + "<br>" +
+                "Обратная строка S1: " + reversedS1 + "<br>" +
+                "Строка S2 в нижнем регистре: " + lowerCaseS2;
+        }
+
+        
+    </script>
+</head>
+<body>
+    <!-- Кнопка для показа текущего времени -->
+    <button onclick="showCurrentTime()">Показать время</button>
+    
+    <!-- Вывод имени и фамилии -->
+    <div id="name-output"></div>
+
+    <!-- Вывод результатов работы с массивом -->
+    <h2>Работа с массивом</h2>
+    <div id="output">
+        <p id="originalArray"></p>
+        <p id="evenCount"></p>
+        <p id="modifiedArray"></p>
+    </div>
+
+    <!-- Вывод результатов работы со строками -->
+        <div id="string-output"></div>
+
+    <!-- Форма для ввода значений x и y и вывод результатов расчета формулы -->
+    <h1>Вычисление формулы с использованием объектов Math</h1>
+    <p>Введите значения для x и y:</p>
+    <form onsubmit="handleSubmit(); return false;">
+        <label for="inputX">x:</label>
+        <input type="number" id="inputX" required step="any">
+        <br><br>
+        <label for="inputY">y:</label>
+        <input type="number" id="inputY" required step="any">
+        <br><br>
+        <button type="submit">Вычислить</button>
+    </form>
+    <p id="result"></p>
+
+</body>
+</html>

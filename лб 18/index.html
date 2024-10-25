@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пользовательская форма</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Пользовательская форма</h1>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="name" class="form-label">Имя:</label>
+                <input type="text" id="name" name="name" required minlength="2" maxlength="15">
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country" class="form-label">Страна:</label>
+                <select id="country" name="country" required>
+                    <option value="">Выберите страну</option>
+                    <option value="Беларусь">Беларусь</option>
+                    <option value="США">США</option>
+                    <option value="Канада">Канада</option>
+                    <option value="Германия">Германия</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Пол:</label>
+                <div class="gender-group">
+                    <label><input type="radio" name="gender" value="Мужской"> Мужской</label>
+                    <label><input type="radio" name="gender" value="Женский"> Женский</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Интересы:</label>
+                <div class="interest-group">
+                    <label><input type="checkbox" name="interests" value="Спорт"> Спорт</label>
+                    <label><input type="checkbox" name="interests" value="Музыка"> Музыка</label>
+                    <label><input type="checkbox" name="interests" value="Путешествия"> Путешествия</label>
+                    <label><input type="checkbox" name="interests" value="Кино"> Кино</label>
+                </div>
+            </div>
+
+            <button type="button" onclick="submitForm()">Отправить</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <div id="cookie-notification" class="cookie-container">
+        <p>Мы используем файлы cookie для улучшения вашего опыта на сайте. Продолжая пользоваться сайтом, вы соглашаетесь с нашим использованием cookie.</p>
+        <button id="accept-cookies">Принять</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

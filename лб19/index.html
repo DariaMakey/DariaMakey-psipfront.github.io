@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .product {
+            display: inline-block;
+            width: 23%;
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .product h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .product p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .product .price {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .product button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .cart {
+            margin-top: 20px;
+        }
+        .cart-items {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .cart-item button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Каталог товаров</h1>
+        <div id="products" class="products"></div>
+
+        <h2>Корзина</h2>
+        <div id="cart" class="cart">
+            <div class="cart-items"></div>
+            <h3>Общая сумма: <span id="total-price">0</span> руб.</h3>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

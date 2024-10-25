@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title-cnt">Регистрация</div>
+    <div class="container">
+        <div class="box-lb">
+            <ol class="lb-li lb-list">
+                <li class="lb-li lb-txt-1">№ лицевого счета</li>
+                <li class="lb-li lb-txt-1">Номер дома</li>
+                <li class="lb-li lb-txt">Литера дома</li>
+                <li class="lb-li lb-txt">Номер квартиры</li>
+                <li class="lb-li lb-txt">Расширение номера квартиры</li>
+                <li class="lb-li lb-txt-1">E-mail адрес</li>
+                <li class="lb-li lb-txt-1">Пароль</li>
+            </ol>
+        </div>
+        <div class="box-inp">
+            <ol class="inp-list">
+                <li class="inp"><input id="account-number" type="number" required></li>
+                <li class="inp"><input id="house-number" type="number" required></li>
+                <li class="inp"><input id="house-letter" type="text" maxlength="1" pattern="[A-Za-zА-Яа-я]"></li>
+                <li class="inp"><input id="apartment-number" type="text" maxlength="3"required></li>
+                <li class="inp"><input id="apartment-extension" type="text" maxlength="3"></li>
+                <li class="inp"><input id="email" type="email" required></li>
+                <li class="inp"><input id="password" type="password" required></li>
+            </ol>
+            <ol class="list-check">
+                <li><input type="checkbox" checked> <label class="lb-check" for="">Желаю получать суперпредложения по акциям компании</label></li>
+                <li><input type="checkbox" checked> <label class="lb-check" for="">Принимаю условия <u>обработки данных</u> </label></li>
+            </ol>
+            <button class="btn" onclick="validateForm()">Зарегистрироваться</button>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            const requiredFields = [
+                { id: 'account-number', message: 'Пожалуйста, введите № лицевого счета.' },
+                { id: 'house-number', message: 'Пожалуйста, введите номер дома.' },
+                { id: 'apartment-number', message: 'Пожалуйста, введите номер квартиры.' },
+                { id: 'email', message: 'Пожалуйста, введите email.' },
+                { id: 'password', message: 'Пожалуйста, введите пароль.' }
+            ];
+
+            let isValid = true;
+
+            requiredFields.forEach(field => {
+                const input = document.getElementById(field.id);
+                if (!input.value.trim()) {
+                    isValid = false;
+                    input.style.border = '1px solid red';
+                    alert(field.message);
+                } else {
+                    input.style.border = '';
+                }
+            });
+
+            if (isValid) {
+                // Submit the form or perform the desired action
+                alert('Форма успешно отправлена!');
+            }
+        }
+         // Проверка email
+         function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(String(email).toLowerCase());
+        }
+    </script>
+
+</body>
+</html>

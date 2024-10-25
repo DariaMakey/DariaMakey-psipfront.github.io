@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e3f2fd; /* Пастельный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff; /* Белый фон для контейнера */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px; /* Размер заголовка */
+    color: #3f51b5; /* Цвет заголовка */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-label {
+    font-weight: bold; /* Выделение заголовков */
+    color: #333; /* Цвет заголовков */
+}
+
+input[type="text"], input[type="email"], select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px; /* Размер текста */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, select:focus {
+    border-color: #3f51b5; /* Цвет при фокусе */
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between; /* Размещаем варианты ближе друг к другу */
+    margin-top: 10px; /* Увеличенное расстояние между переключателями */
+}
+
+.interest-group {
+    display: flex;
+    flex-direction: column; /* Выравниваем интересы по вертикали */
+    align-items: flex-start; /* Выравниваем по левому краю */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3f51b5; /* Цвет кнопки */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px; /* Размер текста */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #283593; /* Цвет кнопки при наведении */
+}
+
+#result {
+    margin-top: 20px;
+}
+
+/* Общие стили для уведомления */
+.cookie-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cookie-container p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.cookie-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cookie-container button:hover {
+    background-color: #45a049;
+}
+
+/* Скрытие уведомления после принятия */
+.cookie-container.hidden {
+    display: none;
+}

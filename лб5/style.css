@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+body{
+    height: 100vh;
+    background-color: rgb(133, 150, 228);
+    color: rgb(14, 13, 13);
+}
+.item {
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid rgb(41, 60, 202);
+    height: fit-content;
+    width: fit-content;
+   background-color: rgba(138, 131, 131, 0.486);
+   text-align: center;
+   }
+  
+        .item_5{
+            width: 100%;            
+        }
+        .cont-2{
+            display: flex;
+            justify-content: center;
+            /* height: 33%;
+            width: 33%; */
+        }
+        .item_10{
+            background-image: url("/photo.jpg");
+            background-color: none;
+            background-size: cover;
+            background-position: center;
+            width: 300px;
+            height: 300px;
+        }

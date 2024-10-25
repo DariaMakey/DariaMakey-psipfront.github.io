@@ -1,0 +1,27 @@
+.styled-link {
+    color: blue; /* Цвет текста */
+    font-size: 20px; /* Размер шрифта */
+    text-decoration: none; /* Убирает подчеркивание */
+}
+
+.styled-link:hover {
+    color: red; /* Цвет текста при наведении курсора */
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+.item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+#item3 {
+    position: relative;
+}
+#item3 img {
+    width: 200px;
+    height: 200px;
+}

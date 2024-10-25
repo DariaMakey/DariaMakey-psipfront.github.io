@@ -1,0 +1,105 @@
+/* Базовые стили для всей страницы */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9; /* Пастельный фон */
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+}
+
+/* Стили для контейнера формы */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Заголовок формы */
+h2 {
+    text-align: left;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Стили для всех элементов формы */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для подписей к полям */
+label {
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Поля ввода и выпадающий список */
+input, select {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: border 0.3s;
+}
+
+/* Цвет границы при фокусе */
+input:focus, select:focus {
+    border-color: #007bff;
+}
+
+/* Кнопки */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+/* Изменение фона кнопки при наведении */
+button:hover {
+    background-color: #0056b3;
+}
+
+button#clear-cookies {
+    background-color: #dc3545;
+    margin-top: 15px;
+}
+
+button#clear-cookies:hover {
+    background-color: #c82333;
+}
+
+button#download-json {
+    background-color: #28a745;
+    margin-top: 15px;
+}
+
+button#download-json:hover {
+    background-color: #218838;
+}
+
+/* Контейнер для полей даты рождения */
+.birthdate-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,147 @@
+*{
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(133, 133, 133);
+}
+
+.title-cnt{
+    color: rgba(255, 91, 27, 1);
+    text-transform: uppercase;
+    margin-left: 200px;
+    font-weight: 600;
+    font-size: clamp(0.9rem, 0.009rem + 1.31vw, 1.488rem);
+}
+.container{
+    display: flex;
+    width: 40%;
+    height: 45%;
+    padding: 1%;
+}
+
+.box-lb{
+    text-align: right;
+    margin-right: 5%;
+    text-wrap: nowrap;
+    height: 100%;
+    width: 40%;
+
+}
+
+.box-inp{
+    height: 100%;
+    width: 60%;
+
+}
+
+ol{
+    list-style: none;
+    line-height: 40px;
+}
+
+.lb-li{
+    font-size: clamp(0.7rem, 0.009rem + 1.31vw, 1.188rem);
+}
+
+input[type="text"]{
+    height: 30px;
+    width: 100%;
+    border: 1px rgb(95, 95, 95) solid;
+    border-radius: 5px;
+}
+
+.lb-txt-1::after{
+    content: "*";
+    color: red;
+    font-size: 0.9em;
+    margin-left: 2px;
+}
+
+.list-check{
+    line-height: 20px;
+}
+
+.lb-check{
+    font-size: clamp(0.563rem, 0.384rem + 0.476vw, 0.813rem);
+}
+input[type="text"]{
+    height: clamp(1.25rem, 0.804rem + 1.19vw, 1.875rem);
+}
+
+.lb-check{
+    font-size: clamp(0.25rem, 0.804rem + 1.19vw, 0.775rem);
+    text-wrap: nowrap;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + .lb-check {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + .lb-check::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: -3px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ffffff; 
+    background-color: rgba(255, 91, 27, 1); 
+    border-radius: 2px;
+}
+
+input[type="checkbox"]:checked + .lb-check::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 1px;
+    width: 8px;
+    height: 10px;
+    border: solid #FFFFFF; 
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.btn{
+    margin-top: 5%;
+    min-width: 200px;
+    height: 40px;
+    border: none;
+    color: #FFFFFF;
+    background-color: rgba(255, 91, 27, 1);
+    border-radius: 7px;
+    font-size: clamp(0.8rem, 0.009rem + 1.31vw, 1.288rem);
+
+    &:hover{
+        background-color: rgb(127, 255, 142);
+        cursor:grab;
+    }
+}
+
+u{
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 91, 27, 1);
+
+}
+.error {
+    color: red;
+    display: none;
+}

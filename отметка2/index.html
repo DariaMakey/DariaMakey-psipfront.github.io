@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="ключевые слова, теги, HTML, CSS">
+  <title>Моя информация </title> <!-- Заголовок страницы -->
+    <link rel="stylesheet" href="style.css"> <!-- Подключение внешнего CSS-файла -->
+</head>
+<body>
+    <div class="info">
+        <h1 class="name">Макей Дарья Дмитриевна</h1>
+        <p class="group">ПЗТ-38</p>
+        <p class="course">3 курс</p>
+        <p class="hobbies">Мои увлечения</p>
+                    <ul style="text-align: left;">
+                <li>Колледж</li>
+                <li>Школа</li>
+                <li>Унивирситет</li>
+            </ul>
+    </div>
+    <div class="content">
+        <img src="photo.jpg" alt="Пояснительная записка" class="image">
+        <p class="caption">Пояснительная записка</p>
+        <a href="#форма">Перейти к форме</a>
+        <br>
+        <a href="фото.rar">Скачать электронный архив</a>
+        <br>
+                <form id="форма">
+           
+        </form>
+    </div>
+    <br>
+    <table>
+        <tr>
+            
+                     <td rowspan="2" class="narrow-column">Задача</td>
+            <td rowspan="2" class="wide-column">Иванов</td>
+            <td>Пример</td>
+            <td></td>
+        </tr>
+        <tr>
+            
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <div class="login-form"> <!-- Форма для входа -->
+                <form action="#" method="POST">
+            <div class="form-group">
+                <label for="login">Логин:</label>   <!-- Группа элементов формы -->
+                <input type="text" id="login" name="login" required>
+                <a href="#" class="register-link">Зарегистрироваться</a>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+                <a href="#" class="forgot-password">Забыли пароль?</a>
+            </div>
+            <button type="submit">Войти</button>  <!-- Кнопка для отправки формы -->
+        </form>
+    </div>
+    </body>
+</html>

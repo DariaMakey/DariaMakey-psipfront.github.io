@@ -1,0 +1,104 @@
+body {
+    background-color: #85e485; /* зеленый фон */
+    font-family: Arial, sans-serif; /* шрифт Arial */
+}
+
+h1 {
+    font-size: 18pt; /* размер шрифта 18pt */
+}
+.info {
+    text-align: center;
+}
+
+.name {
+    font-size: 24px;
+    text-align: right;
+}
+
+.group {
+    color: red;
+    text-decoration: line-through;
+}
+
+.course {
+    font-style: italic;
+    text-align: left;
+}
+
+.hobbies {
+    text-decoration: underline;
+}
+
+.lists {
+    list-style-type: none;
+}
+.content {
+    width: 80%; /* Ширина контента */
+    margin: 0 auto; /* Центрирование контента */
+}
+
+.image {
+    width: 50%; /* Ширина изображения на всю ширину контейнера */
+    display: block; /* Делаем изображение блочным элементом, чтобы применить к нему выравнивание */
+}
+
+.caption {
+    text-align: left; /* Выравнивание подписи по левому краю */
+}
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td {
+    border: 1px solid #3f8a3f;
+    padding: 8px;
+}
+
+.narrow-column {
+    width: 50px; /* Ширина узкого столбца */
+}
+
+.wide-column {
+    width: 150px; /* Ширина широкого столбца */
+}
+.login-form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 100px); /* учитываем ширину ссылки рядом */
+    padding: 5px;
+    font-size: 16px;
+}
+
+.register-link,
+.forgot-password {
+    float: right;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

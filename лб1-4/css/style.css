@@ -1,0 +1,20 @@
+h1{
+    color: black;
+    }
+img{
+    width: 200px;
+    height: 250px;
+}
+body {
+    background-color: rgb(185, 241, 222);
+}
+h1 {
+    font-style: Bahnschrift SemiLight;
+}
+
+  body {
+    width: 800px; /* Ширина страницы */
+    height: 600px; /* Высота страницы */
+    margin: 0 auto; /* Центрирование страницы по горизонтали */
+  }
+  

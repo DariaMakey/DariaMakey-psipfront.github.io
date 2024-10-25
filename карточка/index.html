@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <!-- Подключение Google Fonts для улучшенного шрифта -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Дополнительные данные</h2>
+    <form id="registration-form">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required 
+               pattern="^[А-Яа-яA-Za-z\s]{2,50}$" 
+               title="Имя должно содержать только буквы и быть длиной от 2 до 50 символов."><br>
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" required
+               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+               title="Введите корректный email в формате user@example.com"><br>
+
+        <label for="birthdate">Дата рождения:</label>
+        <div class="birthdate-container">
+            <input type="number" id="day" name="day" min="1" max="31" placeholder="День" required>
+            <select id="month" name="month" required>
+                <option value="" disabled selected>Месяц</option>
+                <option value="1">Январь</option>
+                <option value="2">Февраль</option>
+                <option value="3">Март</option>
+                <option value="4">Апрель</option>
+                <option value="5">Май</option>
+                <option value="6">Июнь</option>
+                <option value="7">Июль</option>
+                <option value="8">Август</option>
+                <option value="9">Сентябрь</option>
+                <option value="10">Октябрь</option>
+                <option value="11">Ноябрь</option>
+                <option value="12">Декабрь</option>
+            </select>
+            <input type="number" id="year" name="year" min="1900" max="2024" placeholder="Год" required>
+        </div>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+
+    <!-- Блок для отображения данных формы -->
+    <div id="result"></div>
+    
+    <!-- Блок для отображения данных из cookie -->
+    <div id="cookie-result"></div>
+
+    <!-- Кнопка для очистки cookie -->
+    <button id="clear-cookies">Очистить cookie</button>
+
+    <!-- Кнопка для загрузки JSON -->
+    <button id="download-json">Сохранить в JSON</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

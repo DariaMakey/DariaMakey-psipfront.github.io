@@ -1,0 +1,32 @@
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #397d3b;
+}
+#name-output {
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(65, 123, 36);
+}
+#output {
+    margin-top: 20px;
+    font-size: 20px;
+}
+#string-output {
+    font-size: 22px; /* Размер шрифта */
+    line-height: 1.6; /* Межстрочный интервал */
+    color: rgb(144, 23, 23);
+}

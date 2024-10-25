@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+    <title>Защита ЛБ 9</title>
+    <meta name="seman" lang="ru" content="Защита ЛБ 9">
+    <link rel="stylesheet" href="style.css">
+        <script>
+        function showCurrentTime() {
+            const now = new Date();
+            const hours = now.getHours();
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+            alert(`Текущее время: ${hours}:${minutes}:${seconds}`);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Задание 1: Работа с массивом
+            const array = [12, 3, 45, 6, 23, 34, 17];
+            const evenCount = array.filter(num => num % 2 === 0).length;
+            const reversedArray = [...array].reverse();
+            const arrayOutputContainer = document.getElementById('array-output-container');
+
+            arrayOutputContainer.appendChild(createListElement('Исходный массив: ' + array.join(', ')));
+            arrayOutputContainer.appendChild(createListElement('Количество четных элементов: ' + evenCount));
+            arrayOutputContainer.appendChild(createListElement('Перевернутый массив: ' + reversedArray.join(', ')));
+
+            // Задание 2: Работа с циклами
+            const n = 15;
+            const repetitions = n + 5;
+            const nameOutputContainer = document.getElementById('name-output-container');
+            const firstName = "Дарья";
+            const lastName = "Макей";
+
+            for (let i = 0; i < repetitions; i++) {
+                nameOutputContainer.appendChild(createListElement(`${lastName} ${firstName}`));
+            }
+
+            function createListElement(content) {
+                const element = document.createElement('p');
+                element.textContent = content;
+                return element;
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="button-container">
+        <button onclick="showCurrentTime()">Показать время</button>
+    </div>
+    <div id="array-output-container" class="output-container"></div>
+    <div id="name-output-container" class="output-container"></div>
+</body>
+</html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    h1 {
+        color: #333;
+    }
+    .section {
+        margin-bottom: 20px;
+    }
+    .result {
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+        display: inline-block;
+    }
+    button {
+        margin-top: 10px;
+        padding: 5px 10px;
+    }
+    input[type="number"] {
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+<h1>Калькулятор выражений</h1>
+
+<!-- Ввод данных для расчета -->
+<div class="section">
+    <label for="inputX">Введите значение x:</label>
+    <input type="number" id="inputX" step="any"><br>
+    <label for="inputY">Введите значение y:</label>
+    <input type="number" id="inputY" step="any"><br>
+    <button id="calculateButton">Рассчитать</button>
+    <div class="result" id="result"></div>
+</div>
+
+<script src="calc.js" defer></script>
+</body>
+</html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    h1 {
+        color: #333;
+    }
+    .section {
+        margin-bottom: 20px;
+    }
+    .result {
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+        display: inline-block;
+    }
+    button {
+        margin-top: 10px;
+        padding: 5px 10px;
+    }
+</style>
+</head>
+<body>
+    <h1>Работа со строками</h1>
+
+    <!-- Ввод данных для строковых операций -->
+    <div class="section">
+        <button id="stringOperationsButton">Выполнить операции</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById("stringOperationsButton").onclick = function() {
+            let S1 = "Макей";
+            let S2 = "г. Слоним, пр. Независимости 23-53";
+            
+            // 1. Определить длину строки S2
+            let lengthS2 = S2.length;
+            
+            // 2. Записать строку S1 в обратном порядке
+            let reversedS1 = S1.split('').reverse().join('');
+            
+            // 3. Преобразовать строку S2 в нижний регистр
+            let lowerS2 = S2.toLowerCase();
+            
+            // Вывод результатов
+            document.getElementById("result").innerHTML = `
+                Длина строки S2: ${lengthS2}<br>
+                Строка S1 в обратном порядке: ${reversedS1}<br>
+                Строка S2 в нижнем регистре: ${lowerS2}
+            `;
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "name": "Laptop",
+      "description": "A powerful laptop for everyday use.",
+      "price": 999,
+      "image": "1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Smartphone",
+      "description": "Latest model with amazing features.",
+      "price": 699,
+      "image": "2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Headphones",
+      "description": "Noise-cancelling over-ear headphones.",
+      "price": 199,
+      "image": "3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Smartwatch",
+      "description": "A smartwatch with fitness tracking.",
+      "price": 249,
+      "image": "4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Gaming Console",
+      "description": "A next-gen gaming console for an immersive experience.",
+      "price": 499,
+      "image": "5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Camera",
+      "description": "A professional DSLR camera.",
+      "price": 1299,
+      "image": "6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Keyboard",
+      "description": "Mechanical keyboard with RGB lighting.",
+      "price": 99,
+      "image": "7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Mouse",
+      "description": "Wireless gaming mouse.",
+      "price": 59,
+      "image": "8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Monitor",
+      "description": "4K UHD monitor for professionals.",
+      "price": 349,
+      "image": "9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Tablet",
+      "description": "A lightweight tablet for media consumption.",
+      "price": 499,
+      "image": "10.jpg"
+    }
+  ]
+  
